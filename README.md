@@ -44,10 +44,6 @@ To start training, simply run the code, and it will print training and validatio
 
 After training, you can use the model to generate text. The code provides a function generate to generate text given an initial input. You can specify the number of new tokens to generate by setting max_new_tokens.
 
-python
-
-id = torch.zeros((1, 1), dtype=torch.long, device=device)
-generated_text = decode(m.generate(id, max_new_tokens=500)[0].tolist())
 
 ```bash
    id = torch.zeros((1, 1), dtype=torch.long, device=device)
